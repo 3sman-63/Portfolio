@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0 5%;
+    justify-content: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.profile-info{
+    display: flex;
+    margin-top: 25px;
+    
+}
+.profile-info .image{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(250, 137, 43);
+    border-radius: 50%;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile-info .image img{
+    width: 95%;
+    height: 95%;
+    border-radius: 50%;
+}
+.info{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.info .name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 800;
+}
+.info i{
+    font-size: 25px;
+}
+.info .job, .info .location{
+    font-size: 15px;
+    color: #777;
+    margin-top: 8px;
+    align-items: center;
+}
+.follow{
+    display: flex;
+    margin-top: 20px;
+}
+.follow .followers{
+    margin-right: 60px;
+}
+.follow .followers .num,
+.follow .following .num{
+    font-weight: 600;
+}
+.follow .followers .text,
+.follow .following .text{
+    margin-top: 5px;
+    color: #777;
+}
+.about-me{
+    color: #777;
+    margin-top: 15px;
+}
+.follow-btns{
+    margin-top: 20px;
+}
+.follow-btns button{
+    padding: 8px 20px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    outline: none;
+    border: 0;
+    border-radius: 6px;
+    margin-right: 5px;
+    color: black;
+}
+.follow-btns .follow-btn{
+    background-color: rgb(250, 137, 43);
+    color: #fff;
+    
+}
+.socials, .portfolio{
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+.portfolio{
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    font-size: 22px;
+}
+.portfolio img{
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+
+}
+.btn{
+    margin-top: 15px;
+    padding: 15px 10px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    background-color: rgb(250, 137, 43);
+    color: #fff;
+    align-self: center;
+}
+.socials .link{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    background-color: #eee;
+    padding: 15px 20px;
+    align-items: center;
+    border-radius: 8px;
+}
+.socials .link img{
+    width: 30px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.socials a{
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 600;
+    color: #777;
+}
+.socials span{
+    position: absolute;
+    right: 37px;
+}
+.loadingScreen {
+    z-index: 5;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+#loading{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 20px;
+    height: 100vh;
+    background: #fff  no-repeat center;
+    z-index: 99999;
+}
